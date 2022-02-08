@@ -13,7 +13,7 @@ def jogar():
 
     os.system('cls')  # Limpa o terminal.
     print("\n\n\tBem vindo ao jogo de advinhação!")
-    print("\n    Neste jogo, você tem algumas chances\n\tpara advinhar o numero correto."
+    print("\n      Neste jogo, você tem algumas chances\n\tpara advinhar o numero correto."
           "\n\tEsse numero está entre 0 a 10.")
     input("\n\tAperte enter para continuar...")
     os.system('cls')
@@ -78,11 +78,6 @@ def jogar():
     if not acertou:
         print("\n\n\n\n\n\tVocê não acertou o numero!")
 
-    print("\n\n\tPontuação final: {} pontos.\t      Fim do jogo!".format(pontos))
+    print("\n\n\tPontuação final: {} pontos.\n\t      Fim do jogo!".format(pontos))
     time.sleep(5)  # Faz o terminal esperar 5 segundos.
     os.system('cls')
-
-
-if __name__ == "__main__":
-    # Se o arquivo for executado diretamente, ele inicia normalmente o jogo.
-    jogar()
