@@ -174,7 +174,8 @@ def imprime_resultado_final(acertou, palavra_secreta, erros):
         print("\n\t   Você errou 1 letra!\n\t      Fim do jogo!")
     else:
         print("\n\t   Você errou {} letras!\n\t      Fim do jogo!".format(erros))
-    time.sleep(3)
+    time.sleep(5)  # Faz o terminal esperar 5 segundos.
+    os.system('cls')
 
 
 def obtem_chute_usuario():
@@ -222,8 +223,3 @@ def verifica_chute_em_palavra_secreta(chute, palavra_secreta):
         print("\n\tVocê acertou a letra {}".format(chute))
         time.sleep(3)
         return True
-
-
-if __name__ == "__main__":
-    # Se o arquivo for executado diretamente, ele inicia normalmente o jogo.
-    jogar()
